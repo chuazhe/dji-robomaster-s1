@@ -37,7 +37,10 @@
 <br>
 <details>
   <summary>Show Solution </summary>
+  
+  ```python
 print(5 + 3)
+  ```
 </details>
 
 ## 4) Write a Python program to print the following message
@@ -77,13 +80,20 @@ Let's learn together.
 ## Let's try the robot!
 <details>
   <summary>Show</summary>
+  
 - Make sure that you are connected to the robot hotspot
-- Get the trial.py from https://github.com/chuazhe/chuazhe.github.io and run!
-  - Press 1 to start
-  - Press 2 to move
-  - Press 3 to go
-  - Press 4 to shoot
-  - Press 5 to dance
+- Get the trial.py from https://raw.githubusercontent.com/chuazhe/dji-robomaster-s1/refs/heads/master/Trial/trial.py
+  
+  ```
+  curl -OL https://raw.githubusercontent.com/chuazhe/dji-robomaster-s1/refs/heads/master/Trial/trial.py
+  ```
+  
+- Run it! <br>
+  - Press 1 to start  <br>
+  - Press 2 to move  <br>
+  - Press 3 to go  <br>
+  - Press 4 to shoot  <br>
+  - Press 5 to dance  <br>
 </details>
 <br>
 </details>
