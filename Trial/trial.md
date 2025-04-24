@@ -80,19 +80,19 @@ Let's learn together.
 ## Let's try the robot!
 <details>
   <summary>Show</summary>
-  
-- Make sure that you are connected to the robot hotspot
 - Get the trial.py from https://raw.githubusercontent.com/chuazhe/dji-robomaster-s1/refs/heads/master/Trial/trial.py
   
   ```
   curl -OL https://raw.githubusercontent.com/chuazhe/dji-robomaster-s1/refs/heads/master/Trial/trial.py
   ```
+- Make sure that you are connected to the robot hotspot
+
   
 - Run it! <br>
   - Press 1 to start  <br>
   - Press 2 to move  <br>
   - Press 3 to go  <br>
-  - Press 4 to shoot  <br>
+  - Press 4 to shoot/grip  <br>
   - Press 5 to dance  <br>
 </details>
 <br>
