@@ -24,15 +24,11 @@ def robot_control(run):
         print("right！")
         ep.chassis.drive_speed(0, 0.5, 0)
     elif run == ord('1'):
-        print("Start!")
-        ep_robot.play_sound(robot.SOUND_ID_ATTACK).wait_for_completed()
+        print("Play sound!")
         ep_robot.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
         ep_robot.play_sound(robot.SOUND_ID_RECOGNIZED).wait_for_completed()
-        chassis_action = ep_chassis.drive_speed(x=0, y=0, z=-z_val, timeout=5)
-        ep_robot.play_sound(robot.SOUND_ID_GIMBAL_MOVE)
-        chassis_action.wait_for_completed()
     elif run == ord('2'):
-        print("Move!")
+        print("Move gimbal!")
         ep_gimbal.move(pitch=0, yaw=-100).wait_for_completed()
         ep_gimbal.recenter().wait_for_completed()
         ep_gimbal.move(pitch=0, yaw=100).wait_for_completed()
