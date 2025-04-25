@@ -89,11 +89,16 @@ Let's learn together.
 
   
 - Run it! <br>
-  - Press 1 to start  <br>
-  - Press 2 to move  <br>
-  - Press 3 to go  <br>
+  - Press w to move forward  <br>
+  - Press a to move left  <br>
+  - Press s to move backward  <br>
+  - Press d to move right  <br>
+  - Press 1 to play sound  <br>
+  - Press 2 to move gimbal  <br>
+  - Press 3 to move around  <br>
   - Press 4 to shoot/grip  <br>
   - Press 5 to dance  <br>
+  - Use your imagination! Press ??? to ???  <br>
 </details>
 <br>
 </details>
