@@ -98,6 +98,8 @@ Let's learn together.
   - Press 3 to move around  <br>
   - Press 4 to shoot/grip  <br>
   - Press 5 to dance  <br>
+  - Press 6 to see  <br>
+  - Press 0 to quit  <br>
   - Use your imagination! Press ??? to ???  <br>
 </details>
 <br>
