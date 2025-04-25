@@ -11,7 +11,19 @@ z_val = 30
 
 def robot_control(run):
     ep_led.set_led(comp=led.COMP_ALL, r=red, g=green, b=blue, effect=led.EFFECT_ON)
-    if run == ord('1'):
+    if run == ord('w'):
+        print("forward！")
+        ep.chassis.drive_speed(0.5, 0, 0)
+    elif run == ord('s'):
+        print("back！")
+        ep.chassis.drive_speed(-0.5, 0, 0)
+    elif run == ord('a'):
+        print("left")
+        ep.chassis.drive_speed(0, -0.5, 0)
+    elif run == ord('d'):
+        print("right！")
+        ep.chassis.drive_speed(0, 0.5, 0)
+    elif run == ord('1'):
         print("Start!")
         ep_robot.play_sound(robot.SOUND_ID_ATTACK).wait_for_completed()
         ep_robot.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
