@@ -45,6 +45,14 @@ def robot_control(run):
         # grip()
     elif run == ord('5'):
         dance()
+    elif run == ord('6'):
+        ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)
+        time.sleep(10)
+        ep_camera.stop_video_stream()
+    elif run == ord('0'):
+        ep_robot.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
+        ep_robot.close()
+        sys.exit("Bye") 
 
 def shoot():
     print("Shoot!")
