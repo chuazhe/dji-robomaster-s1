@@ -1,5 +1,6 @@
 import time
-from robomaster import robot, blaster, led, chassis, gimbal
+from robomaster import robot, blaster, led, chassis, gimbal, camera
+import keyboard
 
 red = 255
 green = 0
@@ -9,50 +10,62 @@ x_val = 0.2
 y_val = 0.3
 z_val = 30
 
-def robot_control(run):
-    ep_led.set_led(comp=led.COMP_ALL, r=red, g=green, b=blue, effect=led.EFFECT_ON)
-    if run == ord('w'):
-        print("forward！")
-        ep.chassis.drive_speed(0.5, 0, 0)
-    elif run == ord('s'):
-        print("back！")
-        ep.chassis.drive_speed(-0.5, 0, 0)
-    elif run == ord('a'):
-        print("left")
-        ep.chassis.drive_speed(0, -0.5, 0)
-    elif run == ord('d'):
-        print("right！")
-        ep.chassis.drive_speed(0, 0.5, 0)
-    elif run == ord('1'):
-        print("Play sound!")
-        ep_robot.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
-        ep_robot.play_sound(robot.SOUND_ID_RECOGNIZED).wait_for_completed()
-    elif run == ord('2'):
-        print("Move gimbal!")
-        ep_gimbal.move(pitch=0, yaw=-100).wait_for_completed()
-        ep_gimbal.recenter().wait_for_completed()
-        ep_gimbal.move(pitch=0, yaw=100).wait_for_completed()
-        ep_gimbal.recenter(pitch_speed=100, yaw_speed=100).wait_for_completed()
-        ep_gimbal.recenter().wait_for_completed()
-    elif run == ord('3'):
-        print("Go!")
-        ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()
-        ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()
-        ep_chassis.move(x=0, y=-y_val, z=0, xy_speed=0.7).wait_for_completed()
-        ep_chassis.move(x=0, y=y_val, z=0, xy_speed=0.7).wait_for_completed()
-    elif run == ord('4'):
-        shoot()
-        # grip()
-    elif run == ord('5'):
-        dance()
-    elif run == ord('6'):
-        ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)
-        time.sleep(10)
-        ep_camera.stop_video_stream()
-    elif run == ord('0'):
-        ep_robot.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
-        ep_robot.close()
-        sys.exit("Bye") 
+def robot_control():
+    while True:
+        try:
+            ep_led.set_led(comp=led.COMP_ALL, r=red, g=green, b=blue, effect=led.EFFECT_ON)
+            if keyboard.is_pressed('w'):
+                print("forward！")
+                ep.chassis.drive_speed(0.5, 0, 0)
+                time.sleep(0.2)
+                ep.chassis.drive_speed(0, 0, 0)
+            elif keyboard.is_pressed('s'):
+                print("back！")
+                ep.chassis.drive_speed(-0.5, 0, 0)
+                time.sleep(0.2)
+                ep.chassis.drive_speed(0, 0, 0)
+            elif keyboard.is_pressed('a'):
+                print("left")
+                ep.chassis.drive_speed(0, -0.5, 0)
+                time.sleep(0.2)
+                ep.chassis.drive_speed(0, 0, 0)
+            elif keyboard.is_pressed('d'):
+                print("right！")
+                ep.chassis.drive_speed(0, 0.5, 0)
+                time.sleep(0.2)
+                ep.chassis.drive_speed(0, 0, 0)
+            elif keyboard.is_pressed('1'):
+                print("Play sound!")
+                ep_robot.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
+                ep_robot.play_sound(robot.SOUND_ID_RECOGNIZED).wait_for_completed()
+            elif keyboard.is_pressed('2'):
+                print("Move gimbal!")
+                ep_gimbal.move(pitch=0, yaw=-100).wait_for_completed()
+                ep_gimbal.recenter().wait_for_completed()
+                ep_gimbal.move(pitch=0, yaw=100).wait_for_completed()
+                ep_gimbal.recenter(pitch_speed=100, yaw_speed=100).wait_for_completed()
+                ep_gimbal.recenter().wait_for_completed()
+            elif keyboard.is_pressed('3'):
+                print("Go!")
+                ep_chassis.move(x=x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()
+                ep_chassis.move(x=-x_val, y=0, z=0, xy_speed=0.7).wait_for_completed()
+                ep_chassis.move(x=0, y=-y_val, z=0, xy_speed=0.7).wait_for_completed()
+                ep_chassis.move(x=0, y=y_val, z=0, xy_speed=0.7).wait_for_completed()
+            elif keyboard.is_pressed('4'):
+                shoot()
+                # grip()
+            elif keyboard.is_pressed('5'):
+                dance()
+            elif keyboard.is_pressed('6'):
+                ep_camera.start_video_stream(display=True, resolution=camera.STREAM_360P)
+                time.sleep(1)
+                ep_camera.stop_video_stream()
+            elif keyboard.is_pressed('7'):
+                ep_robot.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
+                ep_robot.close()
+                sys.exit("Bye")
+        except Exception as e:
+            print(e)
 
 def shoot():
     print("Shoot!")
@@ -128,21 +141,17 @@ def dance():
         ep_blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
     chassis_action.wait_for_completed()
 
-def sub_data_handler(sub_info):
-    print("mouse_press:{0} mouse_x:{1} mouse_y:{2} key1:{3}"
-          .format(sub_info[0], sub_info[1], sub_info[2], sub_info[-1]))
-    robot_control(sub_info[-1])
-
 if __name__ == '__main__':
-    ep_robot = robot.Robot()
-    ep_robot.initialize(conn_type="ap")
+    ep = robot.Robot()
+    ep.initialize(conn_type="ap")
 
-    version = ep_robot.get_version()
+    version = ep.get_version()
     print(f"Robot version: {version}")
-    ep_chassis = ep_robot.chassis
-    ep_led = ep_robot.led
-    ep_blaster = ep_robot.blaster
-    ep_gimbal = ep_robot.gimbal
+    ep_chassis = ep.chassis
+    ep_led = ep.led
+    ep_blaster = ep.blaster
+    ep_gimbal = ep.gimbal
+    ep_camera = ep.camera
 
-    ep_robot.set_robot_mode(mode=robot.CHASSIS_LEAD)
-    ep_robot.sub_game_msg(callback=sub_data_handler)
+    ep.set_robot_mode(mode=robot.CHASSIS_LEAD)
+    robot_control()
