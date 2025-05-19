@@ -1,9 +1,13 @@
+# Slide 
 print("追踪目标航天器")
 distance = int(input("输入距离目标航天器的距离："))
 if distance <= 150:
     print("向目标航天器逼近")
 else:
     print("继续追踪目标航天器")#导入编程操控机器人需要的模块
+
+
+# Slide 
 from robomaster import robot
 from robomaster import led
 from robomaster import blaster
@@ -34,7 +38,10 @@ if pos_num == 4:
     ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=1)
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 from robomaster import led
@@ -65,7 +72,11 @@ num2 = int(input("输入一个数："))
 if num1 > num2:
     print(num1)
 else:
-    print(num2)#导入编程操控机器人需要的模块
+    print(num2)
+
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 import time
@@ -82,7 +93,10 @@ time.sleep(1)
 ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 from robomaster import led
@@ -104,7 +118,11 @@ if bullet_type == "i":
 
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 from robomaster import led
@@ -126,7 +144,10 @@ else:
     ep_robot.led.set_led(comp=led.COMP_ALL, r=0, g=255, b=0, effect=led.EFFECT_OFF)
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 from robomaster import led
@@ -157,7 +178,10 @@ else:
     ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=3)
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+# Slide 
 from robomaster import robot
 from robomaster import blaster
 from robomaster import led
@@ -184,21 +208,4 @@ ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=n_max)
 
 
 ###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
-from robomaster import robot
-from robomaster import led
-from robomaster import blaster
-import time
-
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-
-###你要写的程序###
-
-
-
-###结束机器人程序###
-ep_robot.close()
+ep_robot.close()
