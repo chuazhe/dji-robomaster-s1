@@ -204,7 +204,3 @@ ep_robot.led.set_led(comp="all",r=0,g=0,b=255,effect="off")
 
 ###结束机器人程序###
 ep_robot.close()
-
-
-###结束机器人程序###
-ep_robot.close()
