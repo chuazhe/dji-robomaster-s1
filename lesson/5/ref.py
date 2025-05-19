@@ -40,6 +40,8 @@ print(str(a)+"+"+str(b)+"="+str(result))
 # Slide 14_1
 a = input("输入一个字符串：")
 print(a+"的长度为：", len(a))
+
+# May not be used
 print("%s的长度为：%d"%(a,len(a)))
 print("{0}的长度为：{1}".format(a,len(a)))
 
