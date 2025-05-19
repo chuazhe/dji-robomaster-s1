@@ -4,7 +4,7 @@ grade = input("输入你的班级：")
 name = input("输入你的姓名：")
 print(school)
 print(grade)
-print(name)#导入编程操控机器人需要的模块
+print(name)
 
 # Slide 11
 print("""
@@ -56,13 +56,13 @@ from robomaster import robot
 from robomaster import led
 from robomaster import blaster
 
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
+
+
+
 ep_robot = robot.Robot()
 ep_robot.initialize(conn_type="sta")
 
-###你要写的程序###
+
 r_color = int(input("输入前装甲灯R值(0~255)："))
 g_color = int(input("输入前装甲灯G值(0~255)："))
 b_color = int(input("输入前装甲灯B值(0~255)："))
@@ -88,21 +88,21 @@ ep_robot.led.set_led(comp=led.COMP_BOTTOM_RIGHT, r=r_color, g=g_color, b=b_color
 print("机器人右装甲灯颜色为：R=%d, G=%d, B=%d"%(r_color,g_color,b_color))
 time.sleep(5)
 
-###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+
+ep_robot.close()
 
 # Slide 16
 from robomaster import robot
 from robomaster import led
 import time
 
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
+
+
+
 ep_robot = robot.Robot()
 ep_robot.initialize(conn_type="sta")
 
-###你要写的程序###
+
 """音效名称
 robot.SOUND_ID_ATTACK          被打中音效
 robot.SOUND_ID_SHOOT           射击音效
@@ -124,7 +124,7 @@ ep_robot.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
 print("SOUND_ID_COUNT_DOWN")
 ep_robot.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
 
-###结束机器人程序###
+
 ep_robot.close()# This is a sample Python script.
 
 # Slide 18
