@@ -1,3 +1,4 @@
+# Lesson 2 Slide 25
 print("Hello Python!")
 print(99+67)
 
