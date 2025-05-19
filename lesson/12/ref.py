@@ -1,4 +1,4 @@
-# Slide 
+# Slide 7
 import robomaster
 from robomaster import robot
 import time
@@ -25,13 +25,7 @@ else:
 ep_robot.close()
 
 
-
-
-
-
-
-
-# Slide 
+# Slide 8
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -61,12 +55,7 @@ ep_robot.close()
 
 
 
-
-
-
-
-
-# Slide 
+# Slide 9
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -93,6 +82,12 @@ while True:
 
 ###结束机器人程序###
 ep_robot.close()
+
+
+
+
+
+# Maybe not used
 p=45
 q=30
 temp=p%q
@@ -101,12 +96,6 @@ while temp!=0:
     q=temp
     temp=p%q
 print(q)# 导入编程操控机器人需要的模块
-
-
-
-
-
-
 
 # Slide 
 import robomaster
