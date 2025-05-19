@@ -1,4 +1,4 @@
-# Slide 
+# Slide 14
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -22,7 +22,7 @@ ep_robot.close()
 
 
 
-# Slide 
+# Slide 15
 # 导入编程操控机器人需要的模块
 import robomaster
 from robomaster import robot
@@ -50,7 +50,7 @@ ep_robot.close()
 
 
 
-# Slide 
+# Slide 16
 # 导入编程操控机器人需要的模块
 import robomaster
 from robomaster import robot
@@ -73,7 +73,7 @@ ep_robot.close()
 
 
 
-# Slide 
+# Slide 17
 # 导入编程操控机器人需要的模块
 import robomaster
 from robomaster import robot
@@ -110,7 +110,7 @@ ep_robot.close()
 
 
 
-# Slide 
+# Slide 19
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -143,7 +143,7 @@ ep_robot.close()
 
 
 
-# Slide 
+# Slide 20
 # 导入编程操控机器人需要的模块
 import robomaster
 from robomaster import robot
@@ -172,11 +172,11 @@ time.sleep(5)
 ep_robot.armor.unsub_hit_event()
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
 
 
 
-# Slide 
+
+# Slide 21
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -208,37 +208,3 @@ time.sleep(5)
 ep_robot.armor.unsub_hit_event()
 ###结束机器人程序###
 ep_robot.close()
-
-
-
-# Slide 
-import robomaster
-from robomaster import robot
-from robomaster import led
-from robomaster import blaster
-import time
-
-###机器人初始化###
-# 在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-# 程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-
-
-def hit_callback(sub_info, ep_robot):
-    armor_id, hit_type = sub_info
-    print("hit event: hit_comp:{0}, hit_type:{1}".format(armor_id, hit_type))
-    ###你要写的程序###
-###结束###
-
-
-# Slide 
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-ep_robot.armor.set_hit_sensitivity(comp="all", sensitivity=5)
-ep_robot.armor.sub_hit_event(hit_callback, ep_robot)
-time.sleep(5)
-ep_robot.armor.unsub_hit_event()
-###结束机器人程序###
-ep_robot.close()
-
