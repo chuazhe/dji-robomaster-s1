@@ -37,7 +37,7 @@ ep_robot = robot.Robot()
 ep_robot.initialize(conn_type="sta")
 
 ###你要写的程序###
-ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=1)
+ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
 time.sleep(1)
 ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
 
@@ -59,7 +59,7 @@ ep_robot.initialize(conn_type="sta")
 ###你要写的程序###
 robot_num = int(input("输入机器人编号："))
 if robot_num % 2 != 0:
-    ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=3)
+    ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=3)
 else:
     ep_robot.led.set_led(comp=led.COMP_ALL, r=0, g=255, b=0, effect=led.EFFECT_ON)
     time.sleep(2)
@@ -83,9 +83,9 @@ ep_robot.initialize(conn_type="sta")
 ###你要写的程序###
 fire_times = int(input("输入要发射的次数："))
 if fire_times < 10:
-    ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=fire_times)
+    ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=fire_times)
 else:
-    ep_robot.blaster.fire(fire_type=blaster.WATER_FIRE, times=10)
+    ep_robot.blaster.fire(fire_type=blaster.INFRARED_FIRE, times=10)
 
 
 ###结束机器人程序###
