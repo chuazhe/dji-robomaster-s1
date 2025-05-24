@@ -1,4 +1,4 @@
-#导入编程操控机器人需要的模块
+# Slide 7
 import robomaster
 from robomaster import robot
 import time
@@ -22,7 +22,10 @@ else:
 
 
 ###结束机器人程序###
-ep_robot.close()# 导入编程操控机器人需要的模块
+ep_robot.close()
+
+
+# Slide 8
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -49,7 +52,10 @@ ep_robot.led.set_led(comp=led.COMP_ALL, r=0, g=0, b=255, effect=led.EFFECT_ON)
 
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
+
+
+
+# Slide 9
 import robomaster
 from robomaster import robot
 from robomaster import led
@@ -76,6 +82,12 @@ while True:
 
 ###结束机器人程序###
 ep_robot.close()
+
+
+
+
+
+# Maybe not used
 p=45
 q=30
 temp=p%q
@@ -84,6 +96,8 @@ while temp!=0:
     q=temp
     temp=p%q
 print(q)# 导入编程操控机器人需要的模块
+
+# Slide 
 import robomaster
 from robomaster import robot
 from robomaster import blaster
@@ -114,7 +128,16 @@ while a<=q:
 
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
+
+
+
+
+
+
+
+
+
+# Slide 
 import robomaster
 from robomaster import robot
 from robomaster import blaster
@@ -137,7 +160,13 @@ while a>0:
 
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
+
+
+
+
+
+
+# Slide 
 import robomaster
 from robomaster import robot
 from robomaster import blaster
@@ -161,7 +190,15 @@ while a < 160:
 
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
+
+
+
+
+
+
+
+
+# Slide 
 import robomaster
 from robomaster import robot
 from robomaster import blaster
@@ -192,22 +229,3 @@ while a < 170:
     s+=1
 ###结束机器人程序###
 ep_robot.close()
-# 导入编程操控机器人需要的模块
-import robomaster
-from robomaster import robot
-from robomaster import blaster
-import time
-import random
-
-###机器人初始化###
-# 在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-# 程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-
-###你要写的程序###
-
-
-###结束机器人程序###
-ep_robot.close()
-

@@ -1,0 +1,11 @@
+Contents
+1_2: Print
+3: Sleep/Wait/Delay, robot led type and colour (RGB only)
+4: Random, Variable, robot led colour (Any RGB colour)
+5: Input, string type, string length, string format, robot play sound
+6_7_8: Robot chassis movement
+9: Robot gimbal movement and fire
+10: If else
+11: While loop, function, robot hit event sub
+12: While else loop
+

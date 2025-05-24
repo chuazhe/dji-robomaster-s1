@@ -1,43 +1,12 @@
+# Slide 10
 school = input("输入你的学校：")
 grade = input("输入你的班级：")
 name = input("输入你的姓名：")
 print(school)
 print(grade)
-print(name)#导入编程操控机器人需要的模块
-from robomaster import robot
-from robomaster import led
-import time
+print(name)
 
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-
-###你要写的程序###
-"""音效名称
-robot.SOUND_ID_ATTACK          被打中音效
-robot.SOUND_ID_SHOOT           射击音效
-robot.SOUND_ID_SCANNING        扫描音效
-robot.SOUND_ID_RECOGNIZED      识别成功
-robot.SOUND_ID_GIMBAL_MOVE     云台移动音效
-robot.SOUND_ID_COUNT_DOWN      计数音效
-"""
-ep_robot.play_sound(robot.SOUND_ID_ATTACK)
-ep_robot.led.set_led(comp=led.COMP_ALL, r=255, g=0, b=0, effect=led.EFFECT_ON)
-time.sleep(1)
-ep_robot.led.set_led(comp=led.COMP_ALL, r=255, g=0, b=0, effect=led.EFFECT_OFF)
-
-###结束机器人程序###
-ep_robot.close()a = int(input("输入第一个数："))
-b = int(input("输入第二个数："))
-print("%d + %d = %d"%(a,b,a+b))
-print("%d - %d = %d"%(a,b,a-b))
-print("%d * %d = %d"%(a,b,a*b))
-print("%d / %d = %f"%(a,b,a/b))
-print("%d 余 %d = %d"%(a,b,a%b))
-print("%d // %d = %d"%(a,b,a//b))
-print("%d的%d次方 = %d"%(a,b,a**b))
+# Slide 11
 print("""
                        ▶ Python真好玩！
                        |
@@ -46,35 +15,54 @@ II=======00000[/ ★007___|
           _____\______|/-----.
         /___    roborobo   ___|
          \◎◎◎◎◎◎◎◎◎◎/
-""")a = input("输入一个字符串：")
-print(len(a))a = input("输入一个数：")
+""")
+
+
+# Slide 12
+a = input("输入一个字符串：")
+print(len(a))
+
+# Slide 13_1
+a = input("输入一个数：")
 print(type(a))
 b = input("输入第二个数：")
 print(type(b))
 result = a+b
 print(result)
 print(type(result))
+
+# Slide 13_2
 a = float(input("输入第一个加数："))
 b = float(input("输入第二个加数："))
 result = a + b
-print(str(a)+"+"+str(b)+"="+str(result))a = input("输入一个字符串：")
+print(str(a)+"+"+str(b)+"="+str(result))
+
+# Slide 14_1
+a = input("输入一个字符串：")
 print(a+"的长度为：", len(a))
+
+# May not be used
 print("%s的长度为：%d"%(a,len(a)))
-print("{0}的长度为：{1}".format(a,len(a)))city = input("输入城市：")
+print("{0}的长度为：{1}".format(a,len(a)))
+
+# Slide 14_2
+city = input("输入城市：")
 temp = float(input("输入当天气温："))
-print("%s今天气温为：%.1f℃\n欢迎来到%s！"%(city,temp,city))#导入编程操控机器人需要的模块
+print("%s今天气温为：%.1f℃\n欢迎来到%s！"%(city,temp,city))
+
+# Slide 15
 import time
 from robomaster import robot
 from robomaster import led
 from robomaster import blaster
 
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
+
+
+
 ep_robot = robot.Robot()
 ep_robot.initialize(conn_type="sta")
 
-###你要写的程序###
+
 r_color = int(input("输入前装甲灯R值(0~255)："))
 g_color = int(input("输入前装甲灯G值(0~255)："))
 b_color = int(input("输入前装甲灯B值(0~255)："))
@@ -100,19 +88,21 @@ ep_robot.led.set_led(comp=led.COMP_BOTTOM_RIGHT, r=r_color, g=g_color, b=b_color
 print("机器人右装甲灯颜色为：R=%d, G=%d, B=%d"%(r_color,g_color,b_color))
 time.sleep(5)
 
-###结束机器人程序###
-ep_robot.close()#导入编程操控机器人需要的模块
+
+ep_robot.close()
+
+# Slide 16
 from robomaster import robot
 from robomaster import led
 import time
 
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
+
+
+
 ep_robot = robot.Robot()
 ep_robot.initialize(conn_type="sta")
 
-###你要写的程序###
+
 """音效名称
 robot.SOUND_ID_ATTACK          被打中音效
 robot.SOUND_ID_SHOOT           射击音效
@@ -134,39 +124,16 @@ ep_robot.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
 print("SOUND_ID_COUNT_DOWN")
 ep_robot.play_sound(robot.SOUND_ID_COUNT_DOWN).wait_for_completed()
 
-###结束机器人程序###
+
 ep_robot.close()# This is a sample Python script.
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-#导入编程操控机器人需要的模块
-import robomaster
-from robomaster import robot
-from robomaster import led
-from robomaster import blaster
-import time
-import random
-
-###机器人初始化###
-#在程序内实例化Robot对象，相当于在程序内部有一个EP机器人
-#程序与机器人联网，“ap”表示直连模式连接；“sta”表示路由器模式连接；rndis表示使用USB连接
-ep_robot = robot.Robot()
-ep_robot.initialize(conn_type="sta")
-
-###你要写的程序###
-
-
-###结束机器人程序###
-ep_robot.close()
+# Slide 18
+a = int(input("输入第一个数："))
+b = int(input("输入第二个数："))
+print("%d + %d = %d"%(a,b,a+b))
+print("%d - %d = %d"%(a,b,a-b))
+print("%d * %d = %d"%(a,b,a*b))
+print("%d / %d = %f"%(a,b,a/b))
+print("%d 余 %d = %d"%(a,b,a%b))
+print("%d // %d = %d"%(a,b,a//b))
+print("%d的%d次方 = %d"%(a,b,a**b))
