@@ -67,27 +67,31 @@ def robot_control():
 def dance():
     chassis_action = ep_chassis.drive_speed(x=0, y=0, z=-z_val, timeout=5)
     bright = 1
+    ep_gripper.open(power=50)
+    time.sleep(1)
+    ep_gripper.pause()
     for i in range(0, 8):
         ep_led.set_led(comp="bottom_all"L, r=bright << i, g=bright << i, b=bright << i, effect=led.EFFECT_ON)
         print("brightness: {0}".format(bright << i))
         time.sleep(0.5)
-        ep_blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
+    ep_gripper.close(power=50)
+    time.sleep(1)
+    ep_gripper.pause()
     chassis_action.wait_for_completed()
     time.sleep(1)
     
-    chassis_action = ep_chassis.drive_speed(x=0, y=0, z=z_val, timeout=5)
-    it = 0
-    for i in range(0, 8):
-        led1 = it % 8
-        led2 = (it + 1) % 8
-        led3 = (it + 2) % 8
-        it += 1
-        ep_led.set_gimbal_led(comp="top_all", r=255, g=25, b=25,
-                            led_list=[led1, led2, led3], effect=led.EFFECT_ON)
-        print("Gimbal Led: {0} {1} {2} is on!".format(led1, led2, led3))
-        time.sleep(0.5)
-        ep_blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
-    chassis_action.wait_for_completed()
+    # chassis_action = ep_chassis.drive_speed(x=0, y=0, z=z_val, timeout=5)
+    # it = 0
+    # for i in range(0, 8):
+    #     led1 = it % 8
+    #     led2 = (it + 1) % 8
+    #     led3 = (it + 2) % 8
+    #     it += 1
+    #     ep_led.set_gimbal_led(comp="top_all", r=255, g=25, b=25,
+    #                         led_list=[led1, led2, led3], effect=led.EFFECT_ON)
+    #     print("Gimbal Led: {0} {1} {2} is on!".format(led1, led2, led3))
+    #     time.sleep(0.5)
+    # chassis_action.wait_for_completed()
 
 if __name__ == '__main__':
     ep = robot.Robot()
