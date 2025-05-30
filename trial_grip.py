@@ -26,16 +26,22 @@ def robot_control():
                 ep.chassis.drive_speed(x=0,y=-1,z=0,timeout=5)
                 time.sleep(0.2)
                 ep.chassis.drive_speed(x=0,y=0,z=0,timeout=5)
+            elif keyboard.is_pressed('enter'):
+                ep_gripper.close(power=50)
+                time.sleep(1)
+                ep_gripper.pause()
             elif keyboard.is_pressed('space'):
-                ep_blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
+                ep_gripper.open(power=50)
+                time.sleep(1)
+                ep_gripper.pause()
             elif keyboard.is_pressed('up'):
-                ep_robot.gimbal.move(pitch=10, yaw=0, pitch_speed=100, yaw_speed=100).wait_for_completed()
+                ep_arm.move(x=0, y=20).wait_for_completed()
             elif keyboard.is_pressed('down'):
-                ep_robot.gimbal.move(pitch=-10, yaw=0, pitch_speed=100, yaw_speed=100).wait_for_completed()
+                ep_arm.move(x=0, y=-20).wait_for_completed()
             elif keyboard.is_pressed('right'):
-                ep_robot.gimbal.move(pitch=0, yaw=10, pitch_speed=100, yaw_speed=100).wait_for_completed()
+                ep_arm.move(x=20, y=0).wait_for_completed()
             elif keyboard.is_pressed('left'):
-                ep_robot.gimbal.move(pitch=0, yaw=-10, pitch_speed=100, yaw_speed=100).wait_for_completed()
+                ep_arm.move(x=-20, y=0).wait_for_completed()
             elif keyboard.is_pressed('1'):
                 print("Play sound!")
                 ep_robot.play_sound(robot.SOUND_ID_SCANNING).wait_for_completed()
@@ -93,6 +99,8 @@ if __name__ == '__main__':
     ep_led = ep.led
     ep_blaster = ep.blaster
     ep_gimbal = ep.gimbal
+    ep_arm = ep.robotic_arm
+    ep_gripper = ep.gripper
 
     ep.set_robot_mode(mode=robot.CHASSIS_LEAD)
     robot_control()
