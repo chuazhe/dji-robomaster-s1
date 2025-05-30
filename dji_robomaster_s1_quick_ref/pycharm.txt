@@ -1,0 +1,2 @@
+https://www.jetbrains.com/pycharm/download/other.html
+https://download.jetbrains.com/python/pycharm-community-2020.3.5.exe
