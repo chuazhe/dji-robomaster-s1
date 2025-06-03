@@ -61,6 +61,12 @@ def robot_control():
 
 
 def dance():
+    bright = 1
+    for i in range(0, 8):
+        ep_led.set_led(comp=led.COMP_ALL, r=bright << i, g=bright << i, b=bright << i, effect=led.EFFECT_ON)
+        time.sleep(1)
+        print("brightness: {0}".format(bright << i))
+
     ep_chassis.drive_speed(x=0, y=0, z=30, timeout=5)
     it = 0
     for i in range(0, 8):
