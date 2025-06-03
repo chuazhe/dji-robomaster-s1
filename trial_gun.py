@@ -71,7 +71,6 @@ def dance():
 
     ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
     ep_chassis.drive_speed(x=0, y=0, z=360, timeout=5)
-      ep_chassis.drive_speed(x=0, y=0, z=30, timeout=5)
     it = 0
     for i in range(0, 8):
         led1 = it % 8
