@@ -67,13 +67,16 @@ def robot_control():
 
 
 def dance():
+    ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
+    ep_chassis.drive_speed(x=0, y=0, z=360, timeout=5)
     bright = 1
     for i in range(0, 8):
         ep_led.set_led(comp=led.COMP_ALL, r=bright << i, g=bright << i, b=bright << i, effect=led.EFFECT_ON)
         time.sleep(1)
         print("brightness: {0}".format(bright << i))
     
-    chassis_action = ep_chassis.drive_speed(x=0, y=0, z=30, timeout=5)
+    ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
+    ep_chassis.drive_speed(x=0, y=0, z=360, timeout=5)
     it = 0
     for i in range(0, 8):
         led1 = it % 8
@@ -84,6 +87,8 @@ def dance():
                             led_list=[led1, led2, led3], effect=led.EFFECT_ON)
         print("Gimbal Led: {0} {1} {2} is on!".format(led1, led2, led3))
         time.sleep(0.5)
+    ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
+    ep_chassis.drive_speed(x=0, y=0, z=360, timeout=5)
     time.sleep(1)
 
 if __name__ == '__main__':
