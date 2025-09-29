@@ -1,1 +1,125 @@
+Print a message:
+Write code to print the message Hello, World!.
 
+Print a number:
+Write code to print the number 42.
+
+Print the result of addition:
+Write code to print the result of adding 5 and 7.
+
+Print a string multiple times:
+Write code to print the word Python three times, each on a new line.
+
+Print a combination of text and number:
+Write code to print The answer is 10.
+
+************************************************************************************************************************************************************************************************
+
+Print a random number between 1 and 100.
+Print a random number between 50 and 60.
+Print a random number between -10 and 10.
+Print a random number between 0 and 9.
+Print a random number between 1000 and 2000.
+
+************************************************************************************************************************************************************************************************
+
+Ask the user for their name and print a greeting.
+Ask the user for a number and print double its value.
+Ask the user for two numbers and print their sum.
+Ask the user for a word and print its length.
+Ask the user for their age and print what their age will be next year.
+
+************************************************************************************************************************************************************************************************
+
+Print a random number between 1 and 10, then wait 2 seconds before printing "Done".
+Print "Rolling the dice...", wait 1 second, then print a random number between 1 and 6.
+Print "Wait for it...", wait a random number of seconds between 1 and 5, then print "Go!".
+
+************************************************************************************************************************************************************************************************
+
+1. Assign and Print:
+Assign your favorite color to a variable called color and print it.
+
+2. Simple Math:
+Assign the numbers 7 and 3 to variables a and b. Print their sum.
+
+3. Swap Values:
+Assign the values 10 and 20 to variables x and y. Swap their values and print both variables.
+
+4. String Concatenation:
+Assign your first name and last name to variables. Print your full name in one line.
+
+5. Type Conversion:
+Assign the string "123" to a variable. Convert it to an integer and print the result.
+
+************************************************************************************************************************************************************************************************
+
+Easy
+1. Write a Python program to check if a number stored in the variable num is positive, negative, or zero.
+
+2. Assign two numbers to variables a and b. Write code to print the larger number. If they are equal, print "Equal".
+
+3. Write a program that checks if a variable age is 18 or older. If so, print "Adult", otherwise print "Minor".
+
+4. Store a string in the variable word. Write code to check if the string is empty. If it is, print "Empty string", otherwise print "Not empty".
+
+5. Write a program that assigns a number to n and prints "Even" if it is even, or "Odd" if it is odd.
+
+************************************************************************************************************************************************************************************************
+
+Intermediate
+6. Temperature Check:
+Write a program that stores today’s temperature in a variable temp. If the temperature is above 30, print "It's hot outside." If it’s below 10, print "It's cold outside." Otherwise, print "The weather is moderate."
+
+7. Shopping Discount:
+A customer gets a 10% discount if their total bill (stored in bill) is more than $100. Write a program that prints "Discount applied" if the bill is above 100, otherwise print "No discount".
+
+8. Exam Result:
+Store a student’s score in score. If the score is 50 or more, print "Pass". If it’s less than 50, print "Fail".
+
+9. Login Check:
+Store a username in username. If the username is not empty, print "Welcome, <username>!". If it is empty, print "No username entered."
+
+10. Traffic Light:
+Store the color of a traffic light in light (possible values: "red", "yellow", "green"). Write code to print "Stop" if red, "Get Ready" if yellow, and "Go" if green.
+
+************************************************************************************************************************************************************************************************
+Hard
+11. Grading System
+Store a student’s score in score. Print "A" if 90 or above, "B" if 80–89, "C" if 70–79, "D" if 60–69, and "F" if below 60.
+
+12. Bus Fare Calculator
+Store a person’s age in age and whether they are a student in is_student (True/False). If age is under 12 or over 60, fare is $1. If student, fare is $1.5. Otherwise, fare is $2.
+
+13. Movie Ticket Price
+Store a person’s age in age and whether it’s a weekend in is_weekend (True/False).
+
+If age is less than 13, ticket is $5.
+If age is 13 or older and it’s a weekend, ticket is $12.
+If age is 13 or older and it’s not a weekend, ticket is $10.
+
+14. Library Fine Calculator
+Store the number of days a book is overdue in days_overdue.
+
+If days is 0, print "No fine".
+If days is less than 7, fine is $1 per day.
+If days is 7 or more, fine is $2 per day.
+
+************************************************************************************************************************************************************************************************
+Extreme
+
+15. University Scholarship Eligibility
+
+Write a Python program that determines a student’s scholarship amount based on the following rules:
+
+Store the student’s GPA in gpa (float), number of extracurricular activities in activities (int), and whether the student has a leadership position in any activity in has_leadership (True/False).
+
+If GPA is less than 3.0, the student gets no scholarship.
+If GPA is at least 3.0 but less than 3.5:
+If activities are 3 or more and the student has a leadership position, scholarship is $2,000.
+If activities are 3 or more and no leadership, scholarship is $1,000.
+If activities are less than 3, scholarship is $500.
+If GPA is 3.5 or higher:
+If activities are 5 or more and the student has a leadership position, scholarship is $5,000.
+If activities are 5 or more and no leadership, scholarship is $3,000.
+If activities are less than 5, scholarship is $2,000.
