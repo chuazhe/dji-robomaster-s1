@@ -123,3 +123,27 @@ If GPA is 3.5 or higher:
 If activities are 5 or more and the student has a leadership position, scholarship is $5,000.
 If activities are 5 or more and no leadership, scholarship is $3,000.
 If activities are less than 5, scholarship is $2,000.
+
+
+************************************************************************************************************************************************************************************************
+
+1.
+Write a program that prints numbers from 1 to 5 using a while loop. If the number is even, print "Even", otherwise print "Odd".
+
+2.
+Ask the user to enter numbers repeatedly using a while loop. Stop when the user enters 0. If the entered number is positive, print "Positive", else print "Negative".
+
+3.
+Use a while loop to print all numbers from 10 down to 1. If the number is divisible by 3, print "Divisible by 3", else print the number itself.
+
+4.
+Write a program that asks the user to guess a secret number (e.g., 7) using a while loop. If the guess is correct, print "Correct!" and exit. If not, print "Try again".
+
+************************************************************************************************************************************************************************************************
+
+1.
+Write a program that asks the user to guess a randomly generated number between 1 and 50. If the guess is too high, print "Too high". If too low, print "Too low". If correct, print "Correct!" and exit. Limit the user to 7 attempts.
+
+2.
+Use a while loop to sum user-entered numbers. If the running sum becomes a multiple of 10, print "Multiple of 10 reached" and reset the sum to zero. Stop when the user enters 0.
+
