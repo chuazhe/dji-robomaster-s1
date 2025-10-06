@@ -147,3 +147,15 @@ Write a program that asks the user to guess a randomly generated number between 
 2.
 Use a while loop to sum user-entered numbers. If the running sum becomes a multiple of 10, print "Multiple of 10 reached" and reset the sum to zero. Stop when the user enters 0.
 
+************************************************************************************************************************************************************************************************
+Write a program that uses a while loop to print numbers from 1 to 5. Use the else clause to print "Loop finished" after the loop ends.
+
+Ask the user to guess a secret number (e.g., 8) using a while loop. Allow up to 3 attempts. If the user guesses correctly, print "Correct!" and exit. If the loop ends without a correct guess, use the else clause to print "Out of attempts!".
+
+Use a while loop to check numbers from 10 down to 1. If a number is divisible by 7, break the loop. Use the else clause to print "No number divisible by 7 found" if the loop completes without breaking.
+
+Write a program that asks the user to enter positive numbers using a while loop. Stop when the user enters a negative number. Use the else clause to print "All numbers were positive" if the loop ends without a break.
+
+Use a while loop to sum numbers from 1 to 10. If the sum exceeds 30, break the loop. Use the else clause to print "Sum did not exceed 30" if the loop completes without breaking.
+
+************************************************************************************************************************************************************************************************
