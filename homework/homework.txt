@@ -134,7 +134,10 @@ If activities are less than 5, scholarship is $2,000.
 
 
 ************************************************************************************************************************************************************************************************
-While(True)
+While if exit
+
+Ask the user to enter numbers repeatedly using a while loop. Stop when the user enters 0. If the entered number is positive, print "Positive", else print "Negative".
+Write a program that asks the user to guess a secret number (e.g., 7) using a while loop. If the guess is correct, print "Correct!" and exit. If not, print "Try again".
 
 Write a program that prints numbers from 1 to 5 using a while loop. If the number is even, print "Even", otherwise print "Odd".
 
