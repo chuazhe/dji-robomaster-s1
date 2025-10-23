@@ -1,3 +1,5 @@
+Print
+
 Print a message:
 Write code to print the message Hello, World!.
 
@@ -14,6 +16,7 @@ Print a combination of text and number:
 Write code to print The answer is 10.
 
 ************************************************************************************************************************************************************************************************
+Random
 
 Print a random number between 1 and 100.
 Print a random number between 50 and 60.
@@ -22,6 +25,7 @@ Print a random number between 0 and 9.
 Print a random number between 1000 and 2000.
 
 ************************************************************************************************************************************************************************************************
+Input
 
 Ask the user for their name and print a greeting.
 Ask the user for a number and print double its value.
@@ -30,75 +34,79 @@ Ask the user for a word and print its length.
 Ask the user for their age and print what their age will be next year.
 
 ************************************************************************************************************************************************************************************************
+Delay/Wait/Sleep
 
 Print a random number between 1 and 10, then wait 2 seconds before printing "Done".
 Print "Rolling the dice...", wait 1 second, then print a random number between 1 and 6.
 Print "Wait for it...", wait a random number of seconds between 1 and 5, then print "Go!".
 
 ************************************************************************************************************************************************************************************************
+Variable
 
-1. Assign and Print:
+Assign and Print:
 Assign your favorite color to a variable called color and print it.
 
-2. Simple Math:
+Simple Math:
 Assign the numbers 7 and 3 to variables a and b. Print their sum.
 
-3. Swap Values:
+Swap Values:
 Assign the values 10 and 20 to variables x and y. Swap their values and print both variables.
 
-4. String Concatenation:
+String Concatenation:
 Assign your first name and last name to variables. Print your full name in one line.
 
-5. Type Conversion:
+Type Conversion:
 Assign the string "123" to a variable. Convert it to an integer and print the result.
 
 ************************************************************************************************************************************************************************************************
+If(Easy)
 
-Easy
-1. Write a Python program to check if a number stored in the variable num is positive, negative, or zero.
+Write a Python program to check if a number stored in the variable num is positive, negative, or zero.
 
-2. Assign two numbers to variables a and b. Write code to print the larger number. If they are equal, print "Equal".
+Assign two numbers to variables a and b. Write code to print the larger number. If they are equal, print "Equal".
 
-3. Write a program that checks if a variable age is 18 or older. If so, print "Adult", otherwise print "Minor".
+Write a program that checks if a variable age is 18 or older. If so, print "Adult", otherwise print "Minor".
 
-4. Store a string in the variable word. Write code to check if the string is empty. If it is, print "Empty string", otherwise print "Not empty".
+Store a string in the variable word. Write code to check if the string is empty. If it is, print "Empty string", otherwise print "Not empty".
 
-5. Write a program that assigns a number to n and prints "Even" if it is even, or "Odd" if it is odd.
+Write a program that assigns a number to n and prints "Even" if it is even, or "Odd" if it is odd.
 
 ************************************************************************************************************************************************************************************************
+If(Intermediate)
 
-Intermediate
-6. Temperature Check:
+
+Temperature Check:
 Write a program that stores today’s temperature in a variable temp. If the temperature is above 30, print "It's hot outside." If it’s below 10, print "It's cold outside." Otherwise, print "The weather is moderate."
 
-7. Shopping Discount:
+Shopping Discount:
 A customer gets a 10% discount if their total bill (stored in bill) is more than $100. Write a program that prints "Discount applied" if the bill is above 100, otherwise print "No discount".
 
-8. Exam Result:
+Exam Result:
 Store a student’s score in score. If the score is 50 or more, print "Pass". If it’s less than 50, print "Fail".
 
-9. Login Check:
+Login Check:
 Store a username in username. If the username is not empty, print "Welcome, <username>!". If it is empty, print "No username entered."
 
-10. Traffic Light:
+Traffic Light:
 Store the color of a traffic light in light (possible values: "red", "yellow", "green"). Write code to print "Stop" if red, "Get Ready" if yellow, and "Go" if green.
 
 ************************************************************************************************************************************************************************************************
-Hard
-11. Grading System
+If(Hard)
+
+Grading System
 Store a student’s score in score. Print "A" if 90 or above, "B" if 80–89, "C" if 70–79, "D" if 60–69, and "F" if below 60.
 
-12. Bus Fare Calculator
+Bus Fare Calculator
 Store a person’s age in age and whether they are a student in is_student (True/False). If age is under 12 or over 60, fare is $1. If student, fare is $1.5. Otherwise, fare is $2.
 
-13. Movie Ticket Price
+Movie Ticket Price
 Store a person’s age in age and whether it’s a weekend in is_weekend (True/False).
 
 If age is less than 13, ticket is $5.
 If age is 13 or older and it’s a weekend, ticket is $12.
 If age is 13 or older and it’s not a weekend, ticket is $10.
 
-14. Library Fine Calculator
+Library Fine Calculator
 Store the number of days a book is overdue in days_overdue.
 
 If days is 0, print "No fine".
@@ -106,9 +114,9 @@ If days is less than 7, fine is $1 per day.
 If days is 7 or more, fine is $2 per day.
 
 ************************************************************************************************************************************************************************************************
-Extreme
+If(Extreme)
 
-15. University Scholarship Eligibility
+University Scholarship Eligibility
 
 Write a Python program that determines a student’s scholarship amount based on the following rules:
 
@@ -126,28 +134,23 @@ If activities are less than 5, scholarship is $2,000.
 
 
 ************************************************************************************************************************************************************************************************
+While(True)
 
-1.
 Write a program that prints numbers from 1 to 5 using a while loop. If the number is even, print "Even", otherwise print "Odd".
 
-2.
 Ask the user to enter numbers repeatedly using a while loop. Stop when the user enters 0. If the entered number is positive, print "Positive", else print "Negative".
 
-3.
 Use a while loop to print all numbers from 10 down to 1. If the number is divisible by 3, print "Divisible by 3", else print the number itself.
 
-4.
 Write a program that asks the user to guess a secret number (e.g., 7) using a while loop. If the guess is correct, print "Correct!" and exit. If not, print "Try again".
 
-************************************************************************************************************************************************************************************************
-
-1.
 Write a program that asks the user to guess a randomly generated number between 1 and 50. If the guess is too high, print "Too high". If too low, print "Too low". If correct, print "Correct!" and exit. Limit the user to 7 attempts.
 
-2.
 Use a while loop to sum user-entered numbers. If the running sum becomes a multiple of 10, print "Multiple of 10 reached" and reset the sum to zero. Stop when the user enters 0.
 
 ************************************************************************************************************************************************************************************************
+While Else
+
 Write a program that uses a while loop to print numbers from 1 to 5. Use the else clause to print "Loop finished" after the loop ends.
 
 Ask the user to guess a secret number (e.g., 8) using a while loop. Allow up to 3 attempts. If the user guesses correctly, print "Correct!" and exit. If the loop ends without a correct guess, use the else clause to print "Out of attempts!".
