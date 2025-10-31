@@ -183,9 +183,9 @@ Ask the user for their age and country. If the age is 18 or older, check if the 
 ************************************************************************************************************************************************************************************************
 Logical Operator
 
-Ask the user for four numbers. If at least two numbers are negative and all numbers are less than 100, print "Criteria met". Otherwise, print "Criteria not met".
+Ask the user for four numbers. If either numbers are less than 100, print "Criteria met". Otherwise, print "Criteria not met".
 
-Ask the user for three numbers. If all three numbers are positive and at least one is even, print "Valid set". Otherwise, print "Invalid set".
+Ask the user for three numbers. If all three numbers are positive, print "Valid set". Otherwise, print "Invalid set".
 
 Store two boolean values, is_admin and is_active. If the user is both an admin and active, print "Full access". If the user is either an admin or active (but not both), print "Limited access". If neither, print "No access".
 
