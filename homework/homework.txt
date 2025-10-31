@@ -165,3 +165,33 @@ Write a program that asks the user to enter positive numbers using a while loop.
 Use a while loop to sum numbers from 1 to 10. If the sum exceeds 30, break the loop. Use the else clause to print "Sum did not exceed 30" if the loop completes without breaking.
 
 ************************************************************************************************************************************************************************************************
+Nested if
+
+Ask the user for a number. If the number is greater than 0, check if it is less than 10 and print "Single digit positive", otherwise print "Positive number". If the number is 0 or less, print "Not positive".
+
+Ask the user for their age. If the age is 21 or older, check if it is 65 or older and print "Retired", otherwise print "Working adult". If the age is less than 21, print "Student".
+
+Store a value in speed. If speed is above 60, check if it is above 120 and print "Over-speeding", otherwise print "Speeding". If speed is 60 or below, print "Safe speed".
+
+Store a number in score. If score is 80 or above, check if it is exactly 100 and print "Perfect score!", otherwise print "High score". If score is below 80, print "Keep trying".
+
+
+Store a value in score. If score is 90 or above, check if it is exactly 100 and print "Perfect score!". If not, check if it is divisible by 5 and print "High score, multiple of 5", otherwise print "High score". If score is below 90 but at least 60, check if it is even and print "Passing and even", otherwise print "Passing and odd". If score is below 60, print "Fail".
+
+Ask the user for their age and country. If the age is 18 or older, check if the country is "USA" (case-insensitive). If so, print "Eligible to vote in USA". If not, check if the country is "India" and print "Eligible to vote in India", otherwise print "Eligible to vote, country not listed". If the age is less than 18, print "Not eligible to vote".
+
+************************************************************************************************************************************************************************************************
+Logical Operator
+
+Ask the user for four numbers. If at least two numbers are negative and all numbers are less than 100, print "Criteria met". Otherwise, print "Criteria not met".
+
+Ask the user for three numbers. If all three numbers are positive and at least one is even, print "Valid set". Otherwise, print "Invalid set".
+
+Store two boolean values, is_admin and is_active. If the user is both an admin and active, print "Full access". If the user is either an admin or active (but not both), print "Limited access". If neither, print "No access".
+
+Ask the user for their age and country. If the age is at least 18 and the country is not "USA" or "Canada", print "Eligible for international program". Otherwise, print "Not eligible".
+
+Store three boolean values: has_license, has_insurance, and has_experience. If the person has a license and (insurance or experience), print "Eligible driver". Otherwise, print "Not eligible".
+
+
+************************************************************************************************************************************************************************************************
