@@ -1,0 +1,19 @@
+1) Print "Hello, World!",  ask the user for their name, store it in a variable, and print "Welcome, <name>!". and a random number between 1 and 10.
+
+2) Ask the user for a word, print its length, and print "Short" if the length is less than 5, else print "Long".
+
+3) Ask the user for a number between -10 and 10, and use nested if to print "Positive", "Negative", or "Zero".
+
+4) Store a random number between 1 and 10 in n, and print "Not 5" if n is not 5, else print "Is 5". Then, ask the user for a number between 1 and 3, print "Wait for n seconds...", wait n seconds, then print "Done".
+
+5) Ask the user for a number, print "Even" if it is even and greater than 10, "Odd" if it is odd and less than 10, else print "Other".
+
+6) Generate a random number between 1 and 20. Let the user guess until correct. If the guess is not between 1 and 20, print "Out of range". If correct, print "Correct!" and exit.
+
+7) Generate three random numbers between 1 and 100. Print "All above 50" if all are greater than 50, "At least one below 10" if any is less than 10, else print "Mixed"
+
+8) Ask the user for a number between 1 and 5. Print "Waiting...", wait that many seconds, then print "Done". If the number is not in range, print "Invalid input".
+
+9) You are running a guessing game with a twist. Generate a random number between 1 and 100. Let the user guess until correct. If the guess is not between 1 and 100, print "Out of range". If the guess is within 3 of the secret number, print "Hot". If the guess is more than 30 away, print "Cold". If correct, print "Correct!" and exit.
+
+10) You are running a quiz game with a while-else block. Generate a random number between 1 and 50. Let the user guess until they get it right or after 7 attempts. If the guess is too high, print "Too high". If too low, print "Too low". When correct, print "You win!" and exit. If the user fails after 7 attempts, print "Game over!" using while-else.
