@@ -15,6 +15,26 @@ Write code to print the word Python three times, each on a new line.
 Print a combination of text and number:
 Write code to print The answer is 10.
 
+ Write code to print the word Python three times, each on a new line.
+
+ Print "Processing..." and wait for 2 seconds before printing "Done!".
+
+ Print "Loading", wait 0.5 seconds, then print "Please wait...", wait 1 second, then print "Ready!".
+
+ Print "Begin", wait 1 second, print "Middle", wait 2 seconds, print "End", wait 3 seconds, print "Finished".
+
+ Print "Waiting for 5 seconds...", wait 5 seconds, then print "Wait over!".
+
+ Print "Start", then print numbers from 1 to 5, each with a 0.5-second pause, then print "Done".
+
+ You are simulating a traffic light. Print "Red", wait 2 seconds, print "Green", wait 2 seconds, print "Yellow", wait 1 second, then print "Red".
+
+ You are simulating a rocket launch. Print "Launching in:", then print 3, 2, 1, each with a 1-second pause, then print "Blast off!".
+
+ You want to show progress in a download. Print "Download started", wait 1 second, print "25% complete", wait 1 second, print "50% complete", wait 1 second, print "Download finished".
+
+ You want to display each letter of the word "PYTHON" with a half-second pause between each letter, then print "Done".
+
 ************************************************************************************************************************************************************************************************
 Random
 
@@ -23,6 +43,26 @@ Print a random number between 50 and 60.
 Print a random number between -10 and 10.
 Print a random number between 0 and 9.
 Print a random number between 1000 and 2000.
+
+ Print the value of a variable called name that stores "Alice".
+
+ Print a random number between 1 and 10.
+
+ Store "Hello" in greeting, print it, wait 0.5 seconds, then print a random number between 10 and 20.
+
+ Store a random number between 1 and 5 in x, print "Waiting...", wait x seconds, then print "Waited" and the value of x.
+
+ You want to display three random numbers between 1 and 50, each with a 0.5-second pause, then print "Finished".
+
+ You are simulating a race. Print "Race starting...", wait 1 second, then print three random runner speeds between 10 and 20, each with a 0.5-second pause.
+
+  You want to simulate a lottery. Print "Lottery draw...", wait 1 second, then print 5 random numbers between 1 and 50, each with a 0.5-second pause.
+
+ You want to simulate a weather report. Print "Weather report:", wait 1 second, then print a random temperature between -10 and 40, a random humidity between 20 and 90, and a random wind speed between 0 and 20.
+
+ You want to simulate a random math challenge. Print "Math challenge:", wait 1 second, then print two random numbers between 1 and 100 and their sum and product.
+
+ You want to simulate a random code unlock. Print "Unlocking code...", wait 2 seconds, then print four random digits (0-9), each with a 0.5-second pause, then print "Unlocked!".
 
 ************************************************************************************************************************************************************************************************
 Input
