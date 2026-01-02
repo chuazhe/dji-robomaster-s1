@@ -16,3 +16,15 @@ Contents
 16: Robomaster Competition Game
 17: Robomaster module - Camera
 18: Robomaster module - Camera II
+19: Robomaster module - Camera III, Python - List
+20: Robomaster module - Camera IV, Python - For loop
+21: Robomaster module - Camera V
+22: Robomaster module - Camera VI
+23: Python - For loop II
+24: Python - function and return
+25: Robomaster module - Follow
+26: Robomaster module - Follow II
+27: Python - Dictionary
+28: Python - Dictionary II
+29: Robomaster module - Shoot
+30: Python - Optimize & Bubble Sort
