@@ -1,0 +1,75 @@
+If(Easy)
+
+Write a Python program to check if a number stored in the variable num is positive, negative, or zero.
+
+Assign two numbers to variables a and b. Write code to print the larger number. If they are equal, print "Equal".
+
+Write a program that checks if a variable age is 18 or older. If so, print "Adult", otherwise print "Minor".
+
+Store a string in the variable word. Write code to check if the string is empty. If it is, print "Empty string", otherwise print "Not empty".
+
+Write a program that assigns a number to n and prints "Even" if it is even, or "Odd" if it is odd.
+
+************************************************************************************************************************************************************************************************
+If(Intermediate)
+
+
+Temperature Check:
+Write a program that stores today’s temperature in a variable temp. If the temperature is above 30, print "It's hot outside." If it’s below 10, print "It's cold outside." Otherwise, print "The weather is moderate."
+
+Shopping Discount:
+A customer gets a 10% discount if their total bill (stored in bill) is more than $100. Write a program that prints "Discount applied" if the bill is above 100, otherwise print "No discount".
+
+Exam Result:
+Store a student’s score in score. If the score is 50 or more, print "Pass". If it’s less than 50, print "Fail".
+
+Login Check:
+Store a username in username. If the username is not empty, print "Welcome, <username>!". If it is empty, print "No username entered."
+
+Traffic Light:
+Store the color of a traffic light in light (possible values: "red", "yellow", "green"). Write code to print "Stop" if red, "Get Ready" if yellow, and "Go" if green.
+
+************************************************************************************************************************************************************************************************
+If(Hard)
+
+Grading System
+Store a student’s score in score. Print "A" if 90 or above, "B" if 80–89, "C" if 70–79, "D" if 60–69, and "F" if below 60.
+
+Bus Fare Calculator
+Store a person’s age in age and whether they are a student in is_student (True/False). If age is under 12 or over 60, fare is $1. If student, fare is $1.5. Otherwise, fare is $2.
+
+Movie Ticket Price
+Store a person’s age in age and whether it’s a weekend in is_weekend (True/False).
+
+If age is less than 13, ticket is $5.
+If age is 13 or older and it’s a weekend, ticket is $12.
+If age is 13 or older and it’s not a weekend, ticket is $10.
+
+Library Fine Calculator
+Store the number of days a book is overdue in days_overdue.
+
+If days is 0, print "No fine".
+If days is less than 7, fine is $1 per day.
+If days is 7 or more, fine is $2 per day.
+
+************************************************************************************************************************************************************************************************
+If(Extreme)
+
+University Scholarship Eligibility
+
+Write a Python program that determines a student’s scholarship amount based on the following rules:
+
+Store the student’s GPA in gpa (float), number of extracurricular activities in activities (int), and whether the student has a leadership position in any activity in has_leadership (True/False).
+
+If GPA is less than 3.0, the student gets no scholarship.
+If GPA is at least 3.0 but less than 3.5:
+If activities are 3 or more and the student has a leadership position, scholarship is $2,000.
+If activities are 3 or more and no leadership, scholarship is $1,000.
+If activities are less than 3, scholarship is $500.
+If GPA is 3.5 or higher:
+If activities are 5 or more and the student has a leadership position, scholarship is $5,000.
+If activities are 5 or more and no leadership, scholarship is $3,000.
+If activities are less than 5, scholarship is $2,000.
+
+
+************************************************************************************************************************************************************************************************
