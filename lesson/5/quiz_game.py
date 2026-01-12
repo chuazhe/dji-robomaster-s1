@@ -2,9 +2,16 @@ import pygame
 import sys
 import random
 
+pygame.mixer.pre_init(44100, 16, 2, 4096)
 pygame.init()
+pygame.mixer.init()
 
-WIDTH, HEIGHT = 600, 400
+pass_sound = pygame.mixer.Sound('pass.mp3')
+fail_sound = pygame.mixer.Sound('fail.mp3')
+pass_sound.set_volume(0.3)
+fail_sound.set_volume(0.3)
+
+WIDTH, HEIGHT = 1024, 640
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 BLUE = (0, 120, 255)
@@ -54,6 +61,7 @@ score = 0
 q_index = 0
 selected = -1
 show_result = False
+sound_played = False
 
 clock = pygame.time.Clock()
 
@@ -71,41 +79,53 @@ while True:
                     if selected == questions[q_index][2]:
                         score += 1
                     show_result = True
+                    sound_played = False
         if event.type == pygame.KEYDOWN and show_result:
             if event.key == pygame.K_SPACE:
                 q_index += 1
                 selected = -1
                 show_result = False
+                sound_played = False
                 if q_index >= len(questions):
                     q_index = 0
                     score = 0
                     random.shuffle(questions)
 
-    # Draw question
     question, options, answer = questions[q_index]
     text = FONT.render(question, True, BLACK)
-    screen.blit(text, (50, 40))
+    text_x = (WIDTH - text.get_width()) // 2
+    screen.blit(text, (text_x, 40))
 
-    # Draw options
     for i, opt in enumerate(options):
         color = BLUE if i == selected else BLACK
-        pygame.draw.rect(screen, GREEN if show_result and i == answer else (RED if show_result and i == selected and i != answer else WHITE), (100, 120 + i*60, 400, 50))
-        pygame.draw.rect(screen, BLACK, (100, 120 + i*60, 400, 50), 2)
+        rect_x = (WIDTH - 400) // 2
+        rect_y = 120 + i*60
+        pygame.draw.rect(screen, GREEN if show_result and i == answer else (RED if show_result and i == selected and i != answer else WHITE), (rect_x, rect_y, 400, 50))
+        pygame.draw.rect(screen, BLACK, (rect_x, rect_y, 400, 50), 2)
         opt_text = SMALL_FONT.render(opt, True, color)
-        screen.blit(opt_text, (120, 135 + i*60))
+        opt_text_x = (WIDTH - opt_text.get_width()) // 2
+        screen.blit(opt_text, (opt_text_x, rect_y + 15))
 
-    # Show result
     if show_result:
+        if not sound_played:
+            if selected == answer:
+                pass_sound.play()
+            else:
+                fail_sound.play()
+            sound_played = True
         if selected == answer:
             result_text = FONT.render('Correct!', True, GREEN)
         else:
             result_text = FONT.render('Wrong!', True, RED)
-        screen.blit(result_text, (250, 370))
+        result_text_x = (WIDTH - result_text.get_width()) // 2
+        screen.blit(result_text, (result_text_x, 420))
         next_text = SMALL_FONT.render('Press SPACE for next', True, BLACK)
-        screen.blit(next_text, (210, 340))
+        next_text_x = (WIDTH - next_text.get_width()) // 2
+        screen.blit(next_text, (next_text_x, 390))
     else:
         info_text = SMALL_FONT.render(f'Score: {score}/{q_index}', True, BLACK)
-        screen.blit(info_text, (10, 10))
+        info_text_x = (WIDTH - info_text.get_width()) // 2
+        screen.blit(info_text, (info_text_x, 10))
 
     pygame.display.flip()
     clock.tick(30)
