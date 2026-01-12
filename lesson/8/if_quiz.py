@@ -12,7 +12,6 @@ pygame.display.set_caption('If-Else Quiz Game')
 font = pygame.font.SysFont(None, 32)
 clock = pygame.time.Clock()
 
-# Simple if-else questions
 questions = [
     ("if 3 > 2: print('A') else: print('B')", "A"),
     ("if 5 == 10: print('X') else: print('Y')", "Y"),
@@ -50,7 +49,6 @@ current = 0
 show_result = False
 result_text = ""
 
-# Load sounds
 try:
     pass_sound = pygame.mixer.Sound("pass.mp3")
 except Exception:
