@@ -17,10 +17,13 @@ WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 BLUE = (0, 0, 200)
 
+
 font = pygame.font.SysFont(None, 72)
 small_font = pygame.font.SysFont(None, 28)
 clock = pygame.time.Clock()
 number = 0
+min_val = 1
+max_val = 100
 
 running = True
 while running:
@@ -34,7 +37,10 @@ while running:
             if event.key == pygame.K_ESCAPE:
                 running = False
             if event.key == pygame.K_SPACE:
-                number = random.randint(,)
+                number = random.randint(min_val, max_val)
+
+    range_text = f"Range: {min_val} to {max_val}"
+    draw_text(range_text, small_font, BLACK, WIDTH // 2, 40)
 
     draw_text(str(number), font, BLUE, WIDTH // 2, HEIGHT // 2)
     draw_text("Press SPACE for new number", small_font, BLACK, WIDTH // 2, HEIGHT - 40)
