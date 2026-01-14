@@ -28,7 +28,11 @@ while True:
     mouse_pos = pygame.math.Vector2(mouse_x, mouse_y)
     circle_pos = pygame.math.Vector2(circle_x, circle_y)
     if mouse_pos.distance_to(circle_pos) < radius:
-        color = GREEN  
+        keys = pygame.key.get_pressed()
+        if keys[pygame.K_SPACE]:
+            color = RED  
+        else:
+            color = GREEN  
     else:
         color = BLUE   
 
