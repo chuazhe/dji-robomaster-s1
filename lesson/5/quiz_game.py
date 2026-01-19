@@ -53,6 +53,9 @@ questions = [
     ("Which variable name follows Python naming conventions?", ['MyVar', 'my_var', 'my-var', 'myVar!'], 1),
     ("Which of these variable names is not allowed?", ['_myvar', 'my var', 'myvar2', 'var_'], 1),
     ("Which variable name is invalid in Python?", ['var$', 'var_2', 'varTwo', '_2var'], 0),
+    ("What is the length of the string 'Python'?", ['5', '6', '7', '0'], 1),
+    ("What is the length of the string 'a_p_p_l_e'?", ['8', '9', '10', '11'], 1),
+    ("What is the length of the string 'orange '?", ['6', '7', '8', '9'], 1),
 ]
 
 random.shuffle(questions)
