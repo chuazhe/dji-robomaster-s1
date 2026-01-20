@@ -1,0 +1,14 @@
+Print: The Magic Spell
+Q: A wizard casts a spell. Print the words "Alakazam!", "Abracadabra!", and "Hocus Pocus!" each on a new line, all in uppercase.
+
+Print: The Treasure Map
+Q: You found a treasure map. Print the coordinates (x=12, y=34) in the format: "Treasure at (12, 34)".
+
+Variable: The Hero’s Stats
+Q: Assign 100 to health, 50 to mana, 20 to strength, and print them as "Health: 100, Mana: 50, Strength: 20".
+
+Variable: The Magic Stones
+Q: You find three stones with values 7, 14, and 21. Assign them to a, b, c and print their total value.
+
+Input: The Password Gate
+Q: The gatekeeper asks for a password. Read the password and print "Access granted to [password]".
