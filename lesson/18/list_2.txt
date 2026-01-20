@@ -1,0 +1,5 @@
+https://www.w3schools.com/python/python_lists.asp
+
+Add list items
+Remove list items
+Loop lists
