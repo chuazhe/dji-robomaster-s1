@@ -3,28 +3,28 @@ Contents
 3: Python - Wait, Robomaster module - LED(RGB only)
 4: Python - Random and variable, Robomaster module - LED(Any RGB colour)
 5: Python - Input and variable length, Robomaster module - Audio
-6: Robomaster module - chassis movement
-7: Robomaster module - chassis movement with modifiable speed
-8: Robomaster module - chassis movement with control over wheels
-9: Robomaster module - gimbal movement and gun fire
-10: Python - If else
+6: Robomaster module - chassis movement (***Review previously learned python concept***)
+7: Robomaster module - chassis movement with modifiable speed (***Review previously learned python concept***)
+8: Robomaster module - chassis movement with control over wheels (***Review previously learned python concept***)
+9: Robomaster module - gimbal movement and gun fire (***Review previously learned python concept***)
+10: Python - If else 
 11: Python - Forever loop and function
 12: Python - While else loop
 13: Python - Nested if
 14: Python - Logical Operator(AND,OR,NOT)
-15: Robomaster Mission Game
-16: Robomaster Competition Game
-17: Robomaster module - Camera
-18: Robomaster module - Camera II
-19: Robomaster module - Camera III, Python - List
-20: Robomaster module - Camera IV, Python - For loop
-21: Robomaster module - Camera V
-22: Robomaster module - Camera VI
-23: Python - For loop II
-24: Python - function and return
-25: Robomaster module - Follow
-26: Robomaster module - Follow II
+15: Robomaster Mission Game (***Review previously learned python concept***)
+16: Robomaster Competition Game (***Review previously learned python concept***)
+17: Robomaster module - Camera (***Review previously learned python concept***)
+18: Robomaster module - Camera II (***Review previously learned python concept***)
+19: Robomaster module - Camera III, Python - List (Basic List)
+20: Robomaster module - Camera IV, Python - For loop (Advanced List)
+21: Robomaster module - Camera V (Basic For loop)
+22: Robomaster module - Camera VI (Advanced For loop)
+23: Python - For loop II (***Review previously learned python concept***)
+24: Python - Function and return
+25: Robomaster module - Follow (***Review previously learned python concept***)
+26: Robomaster module - Follow II (***Review previously learned python concept***)
 27: Python - Dictionary
 28: Python - Dictionary II
-29: Robomaster module - Shoot
-30: Python - Optimize & Bubble Sort
+29: Robomaster module - Shoot (***Review previously learned python concept***)
+30: Python - Optimize & Bubble Sort (***Review previously learned python concept***)
