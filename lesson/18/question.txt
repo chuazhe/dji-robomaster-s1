@@ -1,0 +1,30 @@
+Here are 10 Python list questions in a story format, each with an answer:
+
+Anna wants to keep track of her favorite books. How can she create an empty list to store them?
+
+
+Anna reads a new book called "Python 101" and wants to add it to her list. How can she do this?
+
+
+Anna wants to see which book she added first. How can she access the first book in her list?
+
+
+Anna decides she no longer likes "Python 101" and wants to remove it from her list. How can she do that?
+
+
+Anna wonders how many books are currently in her list. How can she find out?
+
+
+Anna has another list of books from her friend and wants to combine both lists. How can she do this?
+
+
+Anna wants to check if "Python Tricks" is in her list. How can she do that?
+
+
+Anna wants to see the first three books she added. How can she get a sublist of them?
+
+
+Anna wants to reverse the order of her book list. How can she do this?
+
+
+Anna wants to sort her book list alphabetically. How can she do that?
