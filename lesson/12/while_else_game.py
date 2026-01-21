@@ -13,16 +13,14 @@ while running:
             running = False  # Window closed
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_ESCAPE:
-                print("ESC pressed, exiting loop early.")
                 break
     else:
-        # This else runs if the while loop wasn't broken by ESC
         screen.fill((0, 128, 255))
         pygame.display.flip()
         continue
     break
 else:
-    print("Window closed normally (not with ESC).")
+    print("Try again")
 
 pygame.quit()
 sys.exit()
