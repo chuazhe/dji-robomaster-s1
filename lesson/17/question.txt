@@ -1,0 +1,28 @@
+How do you create an empty list in Python?
+
+
+How do you add an element to the end of a list?
+
+
+How do you access the first element of a list?
+
+
+How do you remove an element from a list by value?
+
+
+How do you find the length of a list?
+
+
+How do you combine two lists into one?
+
+
+How do you check if an item exists in a list?
+
+
+How do you get a sublist containing the first three elements?
+
+
+How do you reverse the elements of a list?
+
+
+How do you sort a list in ascending order?
