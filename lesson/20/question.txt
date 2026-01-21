@@ -1,0 +1,13 @@
+Tom wants to print numbers from 1 to 5 to keep track of his workout sets. How can he do this using a for loop?
+
+Sara has a list of her favorite colors and wants to print each one. How can she do this with a for loop?
+
+Ben wants to add up all the scores from his games stored in a list. How can he calculate the total using a for loop?
+
+Lily wants to print each letter in her name on a new line. How can she do this with a for loop?
+
+Alex wants to print only the odd numbers from 1 to 10. How can he do this using a for loop?
+
+Maya wants to stop printing numbers once she reaches 4 in a loop from 1 to 10. How can she do this?
+
+Ethan wants to print the numbers from 5 down to 1. How can he do this with a for loop?
