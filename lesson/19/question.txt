@@ -1,0 +1,7 @@
+How do you print numbers from 1 to 5 using a for loop?
+How do you iterate over a list of fruits and print each one?
+How do you sum all numbers in a list using a for loop?
+How do you print each character in a string using a for loop?
+How do you print only even numbers from 1 to 10 using a for loop?
+How do you break out of a for loop when a condition is met?
+How do you use a for loop to print numbers in reverse from 5 to 1?
