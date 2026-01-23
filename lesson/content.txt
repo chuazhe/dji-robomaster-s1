@@ -12,15 +12,15 @@ Contents
 12: Python - While else loop
 13: Python - Nested if
 14: Python - Logical Operator(AND,OR,NOT)
-15: Robomaster Mission Game (***Review previously learned python concept***)
-16: Robomaster Competition Game (***Review previously learned python concept***)
-17: Robomaster module - Camera (***Review previously learned python concept***)
-18: Robomaster module - Camera II (***Review previously learned python concept***)
-19: Robomaster module - Camera III, Python - List (Basic List)
-20: Robomaster module - Camera IV, Python - For loop (Advanced List)
-21: Robomaster module - Camera V (Basic For loop)
-22: Robomaster module - Camera VI (Advanced For loop)
-23: Python - For loop II (***Review previously learned python concept***)
+15: Robomaster Mission Game (***Review previously learned python concept***), Showcase libraries
+16: Robomaster Competition Game (***Review previously learned python concept***), Showcase libraries
+17: Robomaster module - Camera (***Review previously learned python concept***), Python - List (Basic List)
+18: Robomaster module - Camera II (***Review previously learned python concept***), Python - List (Advanced List)
+19: Robomaster module - Camera III, Basic For loop
+20: Robomaster module - Camera IV, Advanced For loop
+21: Robomaster module - Camera V, (***Review previously learned python concept***)
+22: Robomaster module - Camera VI, (***Review previously learned python concept***), Arduino
+23: Python - For loop II (***Review previously learned python concept***), Arduino
 24: Python - Function and return
 25: Robomaster module - Follow (***Review previously learned python concept***)
 26: Robomaster module - Follow II (***Review previously learned python concept***)
