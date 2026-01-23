@@ -20,11 +20,11 @@ Contents
 20: Robomaster module - Camera IV (***Review previously learned python concept***), Advanced For loop
 21: Robomaster module - Camera V, (***Review previously learned python concept***)
 22: Robomaster module - Camera VI, (***Review previously learned python concept***), Arduino
-23: Python - For loop II (***Review previously learned python concept***), Arduino
+23: Python - For loop II (***Review previously learned python concept***), Free Style
 24: Python - Function and return
-25: Robomaster module - Follow (***Review previously learned python concept***)
-26: Robomaster module - Follow II (***Review previously learned python concept***)
+25: Robomaster module - Follow (***Review previously learned python concept***), Free Style
+26: Robomaster module - Follow II (***Review previously learned python concept***), Free Style
 27: Python - Dictionary
 28: Python - Dictionary II
-29: Robomaster module - Shoot (***Review previously learned python concept***)
-30: Python - Optimize & Bubble Sort (***Review previously learned python concept***)
+29: Robomaster module - Shoot (***Review previously learned python concept***), Free Style
+30: Python - Optimize & Bubble Sort (***Review previously learned python concept***), Free Style
