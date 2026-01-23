@@ -1,3 +1,6 @@
+Introduce upper() and lower(): https://www.geeksforgeeks.org/python/isupper-islower-lower-upper-python-applications/
+
+
 Easy:
 Write a for loop to print each element in the list numbers = [1, 2, 3, 4, 5].
 
