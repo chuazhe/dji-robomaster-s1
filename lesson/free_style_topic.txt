@@ -1,0 +1,5 @@
+Data Science & Analytics -  NumPy, Pandas, Matplotlib
+Web Development: Flask (backend), HTML/CSS/JS (frontend)
+Automation & Bots: PyAutoGUI
+Desktop GUI: Tkinter, PyQt
+Game Development: Pygame
