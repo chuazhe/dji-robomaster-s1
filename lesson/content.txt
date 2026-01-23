@@ -16,8 +16,8 @@ Contents
 16: Robomaster Competition Game (***Review previously learned python concept***), Showcase libraries
 17: Robomaster module - Camera (***Review previously learned python concept***), Python - List (Basic List)
 18: Robomaster module - Camera II (***Review previously learned python concept***), Python - List (Advanced List)
-19: Robomaster module - Camera III, Basic For loop
-20: Robomaster module - Camera IV, Advanced For loop
+19: Robomaster module - Camera III (***Review previously learned python concept***), Basic For loop
+20: Robomaster module - Camera IV (***Review previously learned python concept***), Advanced For loop
 21: Robomaster module - Camera V, (***Review previously learned python concept***)
 22: Robomaster module - Camera VI, (***Review previously learned python concept***), Arduino
 23: Python - For loop II (***Review previously learned python concept***), Arduino
