@@ -1,4 +1,4 @@
 Data Science & Analytics:  NumPy, Pandas, Matplotlib
 Automation & Bots: PyAutoGUI, Requests, BeautifulSoup, Paramiko
 Desktop Application: Tkinter, PyQt
-Game Development: Pygame, Turtle
+Game & Graphic Development: Pygame
