@@ -81,7 +81,6 @@ def dance():
                               led_list=[led1, led2, led3], effect=led.EFFECT_ON)
         print("Gimbal Led: {0} {1} {2} is on!".format(led1, led2, led3))
         time.sleep(0.5)
-        ep_blaster.fire(fire_type=blaster.INFRARED_FIRE, times=1)
     ep.play_sound(robot.SOUND_ID_GIMBAL_MOVE).wait_for_completed()
     ep_chassis.drive_speed(x=0, y=0, z=360, timeout=5)    
     time.sleep(1)
