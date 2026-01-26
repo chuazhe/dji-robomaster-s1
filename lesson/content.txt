@@ -3,11 +3,11 @@ Contents
 3: Python - Wait, Robomaster module - LED(RGB only)
 4: Python - Random and variable, Robomaster module - LED(Any RGB colour)
 5: Python - Input and variable length, Robomaster module - Audio
-6: Robomaster module - chassis movement , review previously learned python concept, free style project
-7: Robomaster module - chassis movement with modifiable speed , review previously learned python concept, free style project
-8: Robomaster module - chassis movement with control over wheels , review previously learned python concept, free style project
+6: Robomaster module - chassis movement , review previously learned python concept, Python - if, free style project
+7: Robomaster module - chassis movement with modifiable speed , review previously learned python concept, Python - ifelse, free style project
+8: Robomaster module - chassis movement with control over wheels , review previously learned python concept, free style project, Python - elif, free style project
 9: Robomaster module - gimbal movement and gun fire , review previously learned python concept, free style project
-10: Python - If else 
+10: Python - If else, review previously learned python concept, free style project
 11: Python - Forever loop and function
 12: Python - While else loop
 13: Python - Nested if
