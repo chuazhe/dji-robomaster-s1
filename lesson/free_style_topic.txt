@@ -5,3 +5,6 @@ https://pyautogui.readthedocs.io/en/latest/
 
 https://automatetheboringstuff.com/
 https://github.com/all-an/automate-with-python
+
+o find the \(X\) and \(Y\) coordinates of your mouse pointer, you can use specialized software like MouseLoc or Point Position, take a screenshot and open it in MS Paint
+To "print screen" (screenshot) on Windows, use Win + Print Screen to save the whole screen, Alt + Print Screen for the active window, or Win + Shift + S to open the Snipping Tool for custom captures
