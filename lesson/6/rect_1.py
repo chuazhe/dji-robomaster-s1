@@ -23,12 +23,12 @@ running = True
 
 while running:
     for event in pygame.event.get():
-        # If event type is pygame quit, then set running to false
+        
         if event.type == pygame.QUIT:
             running = False
-        # If event type is pygame key down
+        
         if event.type == pygame.KEYDOWN:
-            # If event type is pygame keyboard space key
+            
             if event.key == pygame.K_SPACE:
                 rect_color_index = (rect_color_index + 1) % len(rect_colors)
                 rect_color = rect_colors[rect_color_index]
