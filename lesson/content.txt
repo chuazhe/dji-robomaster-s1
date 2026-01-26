@@ -4,27 +4,27 @@ Contents
 4: Python - Random and variable, Robomaster module - LED(Any RGB colour)
 5: Python - Input and variable length, Robomaster module - Audio
 6: Robomaster module - chassis movement , review previously learned python concept
-7: Robomaster module - chassis movement with modifiable speed , review previously learned python concept, Python - if, free style project
-8: Robomaster module - chassis movement with control over wheels , review previously learned python concept, free style project, Python - ifelse, free style project
-9: Robomaster module - gimbal movement and gun fire , review previously learned python concept, free style project, Python - elif, free style project
-10: Python - If else, review previously learned python concept, free style project
+7: Robomaster module - chassis movement with modifiable speed , review previously learned python concept, Python - if, automation project
+8: Robomaster module - chassis movement with control over wheels , review previously learned python concept, automation project, Python - ifelse, automation project
+9: Robomaster module - gimbal movement and gun fire , review previously learned python concept, automation project, Python - elif, automation project
+10: Python - If else, review previously learned python concept, automation project
 11: Python - Forever loop and function
 12: Python - While else loop
 13: Python - Nested if
 14: Python - Logical Operator(AND,OR,NOT)
-15: Robomaster Mission Game , review previously learned python concept, free style project
-16: Robomaster Competition Game , review previously learned python concept, free style project
+15: Robomaster Mission Game , review previously learned python concept, automation project
+16: Robomaster Competition Game , review previously learned python concept, automation project
 17: Robomaster module - Camera , review previously learned python concept, Python - List (Basic List)
 18: Robomaster module - Camera II , review previously learned python concept, Python - List (Advanced List)
 19: Robomaster module - Camera III , review previously learned python concept, Basic For loop
 20: Robomaster module - Camera IV , review previously learned python concept, Advanced For loop
 21: Robomaster module - Camera V, , review previously learned python concept
-22: Robomaster module - Camera VI, , review previously learned python concept, free style project
-23: Python - For loop II , review previously learned python concept, free style project
+22: Robomaster module - Camera VI, , review previously learned python concept, automation project
+23: Python - For loop II , review previously learned python concept, automation project
 24: Python - Function and return
-25: Robomaster module - Follow , review previously learned python concept, free style project
-26: Robomaster module - Follow II , review previously learned python concept, free style project
+25: Robomaster module - Follow , review previously learned python concept, automation project
+26: Robomaster module - Follow II , review previously learned python concept, automation project
 27: Python - Dictionary
 28: Python - Dictionary II
-29: Robomaster module - Shoot , review previously learned python concept, free style project
-30: Python - Optimize & Bubble Sort , review previously learned python concept, free style project
+29: Robomaster module - Shoot , review previously learned python concept, automation project
+30: Python - Optimize & Bubble Sort , review previously learned python concept, automation project
