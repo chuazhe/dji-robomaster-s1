@@ -2,3 +2,5 @@ PyAutoGUI
 
 https://medium.com/@henilshah2004/automating-repetitive-tasks-with-pyautogui-a-comprehensive-guide-0d539503f8f7
 https://pyautogui.readthedocs.io/en/latest/
+
+https://github.com/all-an/automate-with-python
