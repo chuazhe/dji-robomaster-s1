@@ -77,7 +77,11 @@ while True:
         if event.type == pygame.MOUSEBUTTONDOWN and not show_result:
             mx, my = pygame.mouse.get_pos()
             for i in range(4):
-                if 100 < mx < 500 and 120 + i*60 < my < 170 + i*60:
+                rect_width = WIDTH * 0.39
+                rect_height = HEIGHT * 0.078
+                rect_x = (WIDTH - rect_width) // 2
+                rect_y = int(HEIGHT * 0.1875 + i * (HEIGHT * 0.09375))
+                if rect_x < mx < rect_x + rect_width and rect_y < my < rect_y + rect_height:
                     selected = i
                     if selected == questions[q_index][2]:
                         score += 1
