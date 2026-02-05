@@ -36,3 +36,29 @@ print("8)", exists)
 colors = ["red", "green", "blue"]
 colors[1] = "yellow"
 print("9)", colors)
+
+
+# Print each element in the list using a for loop
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+	print(num)
+
+# Print each fruit in the list using a for loop
+fruits = ['apple', 'banana', 'cherry']
+for fruit in fruits:
+	print(fruit)
+
+# Use a for loop to sum all the numbers in the list
+nums = [10, 20, 30, 40]
+total = 0
+for n in nums:
+	total += n
+print(total)
+
+# Use a for loop to find and print the largest number in a list
+nums = [10, 20, 30, 40]
+largest = nums[0]
+for n in nums:
+	if n > largest:
+		largest = n
+print(largest)
