@@ -1,11 +1,12 @@
 import pygame
 import sys
+import random
 
 pygame.mixer.pre_init(44100, 16, 2, 4096)
 pygame.init()
 pygame.mixer.init()
 
-WIDTH, HEIGHT = 700, 500
+WIDTH, HEIGHT = 700, 500    
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('If-Else Quiz Game')
 
@@ -43,11 +44,20 @@ questions = [
     ("if 2 == 2 and not 0: print('Yes') else: print('No')", "Yes"),
     ("if 2 == 2 and not 1: print('Yes') else: print('No')", "No"),
 ]
+random.shuffle(questions)
 
 score = 0
 current = 0
 show_result = False
 result_text = ""
+
+# Button rendering helper
+def draw_button(text, rect, color, text_color=(0,0,0)):
+    pygame.draw.rect(screen, color, rect)
+    pygame.draw.rect(screen, (0,0,0), rect, 2)
+    label = font.render(text, True, text_color)
+    label_rect = label.get_rect(center=rect.center)
+    screen.blit(label, label_rect)
 
 try:
     pass_sound = pygame.mixer.Sound("pass.mp3")
@@ -63,27 +73,27 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        if event.type == pygame.KEYDOWN and not show_result:
-            if event.key == pygame.K_a:
-                answer = "A"
-            elif event.key == pygame.K_b:
-                answer = "B"
-            elif event.key == pygame.K_x:
-                answer = "X"
-            elif event.key == pygame.K_y:
-                answer = "Y"
-            elif event.key == pygame.K_n:
-                answer = "No"
-            elif event.key == pygame.K_t:
-                answer = "True"
-            elif event.key == pygame.K_f:
-                answer = "False"
-            elif event.key == pygame.K_o:
-                answer = "OK"
-            elif event.key == pygame.K_s:
-                answer = "Not OK"
+        if event.type == pygame.MOUSEBUTTONDOWN and not show_result and current < len(questions):
+            mouse_pos = pygame.mouse.get_pos()
+            # Get answer options from question string
+            qtext = questions[current][0]
+            # Try to extract the two answer options from the question string
+            import re
+            match = re.findall(r"print\('([^']+)'\)", qtext)
+            if len(match) == 2:
+                opt1, opt2 = match
             else:
-                answer = ""
+                # fallback: use correct answer and a dummy
+                opt1 = questions[current][1]
+                opt2 = "Other"
+            btn1_rect = pygame.Rect(120, 260, 180, 60)
+            btn2_rect = pygame.Rect(400, 260, 180, 60)
+            if btn1_rect.collidepoint(mouse_pos):
+                answer = opt1
+            elif btn2_rect.collidepoint(mouse_pos):
+                answer = opt2
+            else:
+                answer = ''
             if answer:
                 correct = questions[current][1]
                 if answer == correct:
@@ -108,7 +118,25 @@ while running:
     if current < len(questions):
         qsurf = font.render(f"Q{current+1}: {questions[current][0]}", True, (0,0,0))
         screen.blit(qsurf, (30, 80))
-        hint = font.render("Type your answer key (A/B/X/Y/N/T/F/O/S)", True, (80,80,80))
+        # Draw answer buttons
+        import re
+        match = re.findall(r"print\('([^']+)'\)", questions[current][0])
+        if len(match) == 2:
+            opt1, opt2 = match
+        else:
+            opt1 = questions[current][1]
+            opt2 = "Other"
+        btn1_rect = pygame.Rect(120, 260, 180, 60)
+        btn2_rect = pygame.Rect(400, 260, 180, 60)
+        def draw_button(text, rect, color, text_color=(0,0,0)):
+            pygame.draw.rect(screen, color, rect)
+            pygame.draw.rect(screen, (0,0,0), rect, 2)
+            label = font.render(text, True, text_color)
+            label_rect = label.get_rect(center=rect.center)
+            screen.blit(label, label_rect)
+        draw_button(opt1, btn1_rect, (200,220,255))
+        draw_button(opt2, btn2_rect, (200,220,255))
+        hint = font.render("Click a button to answer", True, (80,80,80))
         screen.blit(hint, (30, 120))
         score_surf = font.render(f"Score: {score}", True, (0, 100, 0))
         screen.blit(score_surf, (30, 30))
