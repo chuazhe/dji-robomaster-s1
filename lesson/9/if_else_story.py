@@ -39,6 +39,14 @@ current = 0
 show_result = False
 result_text = ""
 
+# Button rendering helper
+def draw_button(text, rect, color, text_color=(0,0,0)):
+    pygame.draw.rect(screen, color, rect)
+    pygame.draw.rect(screen, (0,0,0), rect, 2)
+    label = font.render(text, True, text_color)
+    label_rect = label.get_rect(center=rect.center)
+    screen.blit(label, label_rect)
+
 
 try:
     pass_sound = pygame.mixer.Sound("pass.mp3")
@@ -54,62 +62,27 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
-        if event.type == pygame.KEYDOWN and not show_result:
-            user_input = ''
-            if event.key == pygame.K_r:
-                user_input = "River"
-            elif event.key == pygame.K_m:
-                user_input = "Mountain"
-            elif event.key == pygame.K_f:
-                user_input = "Full"
-            elif event.key == pygame.K_h:
-                user_input = "Hungry"
-            elif event.key == pygame.K_g:
-                user_input = "Gold"
-            elif event.key == pygame.K_n:
-                user_input = "Nothing"
-            elif event.key == pygame.K_o:
-                user_input = "Open"
-            elif event.key == pygame.K_s:
-                user_input = "Search"
-            elif event.key == pygame.K_d:
-                user_input = "Dry"
-            elif event.key == pygame.K_w:
-                user_input = "Wet"
-            elif event.key == pygame.K_v:
-                user_input = "Village"
-            elif event.key == pygame.K_f:
-                user_input = "Forest"
-            elif event.key == pygame.K_p:
-                user_input = "Puppy"
-            elif event.key == pygame.K_l:
-                user_input = "Lost"
-            elif event.key == pygame.K_t:
-                user_input = "Treasure"
-            elif event.key == pygame.K_e:
-                user_input = "Eat"
-            elif event.key == pygame.K_i:
-                user_input = "Island"
-            elif event.key == pygame.K_b:
-                user_input = "Shore"
-            elif event.key == pygame.K_a:
-                user_input = "Alone"
-            elif event.key == pygame.K_c:
-                user_input = "Shelter"
-            elif event.key == pygame.K_u:
-                user_input = "Shiver"
-            elif event.key == pygame.K_k:
-                user_input = "Weak"
-            elif event.key == pygame.K_y:
-                user_input = "Helped"
-            elif event.key == pygame.K_r:
-                user_input = "Recovered"
-            elif event.key == pygame.K_f:
-                user_input = "Fight"
-            elif event.key == pygame.K_u:
-                user_input = "Run"
-            elif event.key == pygame.K_o:
-                user_input = "Outside"
+        if event.type == pygame.MOUSEBUTTONDOWN and not show_result and current < len(questions):
+            mouse_pos = pygame.mouse.get_pos()
+            # Get answer options from question string
+            qtext = questions[current][0]
+            # Try to extract the two answer options from the question string
+            import re
+            match = re.findall(r"print\('([^']+)'\)", qtext)
+            if len(match) == 2:
+                opt1, opt2 = match
+            else:
+                # fallback: use correct answer and a dummy
+                opt1 = questions[current][1]
+                opt2 = "Other"
+            btn1_rect = pygame.Rect(80, 260, 180, 50)
+            btn2_rect = pygame.Rect(340, 260, 180, 50)
+            if btn1_rect.collidepoint(mouse_pos):
+                user_input = opt1
+            elif btn2_rect.collidepoint(mouse_pos):
+                user_input = opt2
+            else:
+                user_input = ''
             if user_input:
                 correct = questions[current][1]
                 if user_input == correct:
@@ -141,7 +114,19 @@ while running:
             qsurf = big_font.render(line, True, (0,0,0))
             screen.blit(qsurf, (30, y))
             y += 36
-        hint = font.render("Type the answer's first letter (see story)", True, (80,80,80))
+        # Draw answer buttons
+        import re
+        match = re.findall(r"print\('([^']+)'\)", questions[current][0])
+        if len(match) == 2:
+            opt1, opt2 = match
+        else:
+            opt1 = questions[current][1]
+            opt2 = "Other"
+        btn1_rect = pygame.Rect(80, 300, 180, 50)
+        btn2_rect = pygame.Rect(340, 300, 180, 50)
+        draw_button(opt1, btn1_rect, (200,220,255))
+        draw_button(opt2, btn2_rect, (200,220,255))
+        hint = font.render("Click a button to answer", True, (80,80,80))
         screen.blit(hint, (30, y + 10))
         score_surf = font.render(f"Score: {score}", True, (0, 100, 0))
         screen.blit(score_surf, (30, 30))
