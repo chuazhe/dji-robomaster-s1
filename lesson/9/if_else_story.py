@@ -1,5 +1,6 @@
 import pygame
 import sys
+import random
 
 pygame.mixer.pre_init(44100, 16, 2, 4096)
 pygame.init()
@@ -31,6 +32,7 @@ questions = [
     ("You are cold. If you light a fire, you get warm. If not, you shiver. If light_fire: print('Warm') else: print('Shiver')", "Warm"),
     ("You see a cave. If you enter, you find shelter. If not, you stay outside. If enter_cave: print('Shelter') else: print('Outside')", "Shelter"),
 ]
+random.shuffle(questions)
 
 score = 0
 current = 0
