@@ -1,0 +1,5 @@
+
+https://realpython.com/python-return-statement/
+https://www.geeksforgeeks.org/python/python-return-statement/
+https://www.w3schools.com/python/ref_keyword_return.asp
+https://libguides.ntu.edu.sg/python/functionreturn
